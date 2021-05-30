@@ -1,0 +1,77 @@
+<div class="main-menu">
+  <ul>
+    <li class="main-menu-item {% if current[1] == 'get-started' %}active{% endif %}">
+      <a href="{{ site.baseurl }}/get-started">Get Started</a>
+    </li>
+
+
+    <li class="main-menu-item {% if current[1] == 'mobile' %}active{% endif %}">
+      <a href="{{ site.baseurl }}/mobile">Projects</a>
+    </li>
+
+    <li class="main-menu-item {% if current[1] == 'blog' %}active{% endif %}">
+      <a href="{{ site.baseurl }}/blog">Datasets</a>
+    </li>
+
+    <li class="main-menu-item">
+      <a href="{{ site.external_urls.tutorials }}">Tutorials</a>
+    </li>
+
+    <li class="main-menu-item">
+      <div id="docsDropdownButton" data-toggle="resources-dropdown" class="resources-dropdown">
+        <a class="doc-option {% if current[1] == {{ site.baseurl }} %}with-down-white-arrow{% else %}with-down-arrow{% endif %}">
+          Docs
+        </a>
+        <div class="resources-dropdown-menu">
+          <a class="nav-dropdown-item" href="{{ site.baseurl }}/docs">
+            <span class="dropdown-title docs-title">MVLab</span>
+            <p></p>
+          </a>
+          <a class="nav-dropdown-item" href="{{ site.baseurl }}/audio">
+            <span class="dropdown-title docs-title">torchaudio</span>
+            <p></p>
+          </a>
+          <a class="nav-dropdown-item" href="{{ site.baseurl }}/text">
+            <span class="dropdown-title docs-title">torchtext</span>
+            <p></p>
+          </a>
+          <a class="nav-dropdown-item" href="{{ site.baseurl }}/vision">
+            <span class="dropdown-title docs-title">torchvision</span>
+            <p></p>
+          </a>
+          <a class="nav-dropdown-item" href="{{ site.baseurl }}/elastic">
+            <span class="dropdown-title docs-title">TorchElastic</span>
+            <p></p>
+          </a>
+          <a class="nav-dropdown-item" href="{{ site.baseurl }}/serve">
+            <span class="dropdown-title docs-title">TorchServe</span>
+            <p></p>
+          </a>
+          <a class="nav-dropdown-item" href="{{ site.baseurl }}/xla/release/1.6/index.html">
+            <span class="dropdown-title docs-title">PyTorch on XLA Devices</span>
+            <p></p>
+          </a>
+        </div>
+      </div>
+    </li>
+
+
+    <li class="main-menu-item" id="github-main-menu-link">
+      <a href="{{ site.external_urls.github }}">GitHub</a>
+    </li>
+
+    <li class="navSearchWrapper reactNavSearchWrapper" key="search">
+      <div class="search-border">
+        <div id="search-icon"></div>
+        <input
+          id="search-input"
+          type="text"
+          title="Search"
+        />
+        <div id="close-search">X</div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<script src="{{ site.baseurl }}/assets/main-menu-dropdown.js"></script>

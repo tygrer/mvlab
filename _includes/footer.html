@@ -1,0 +1,50 @@
+
+<footer class="site-footer">
+  <div class="container footer-container">
+    <div class="footer-logo-wrapper">
+      <a href="{{ site.url }}{{ site.baseurl }}" class="footer-logo"></a>
+    </div>
+
+    <div class="footer-links-wrapper">
+      <div class="footer-links-col">
+        <ul>
+          <li class="list-title"><a href="{{ site.url }}{{ site.baseurl }}">MVLab</a></li>
+          <li><a href="{{ site.baseurl }}/get-started">Get Started</a></li>
+          <li><a href="{{ site.baseurl }}/features">Projects</a></li>
+          <li><a href="{{ site.baseurl }}/ecosystem">Datasets</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <ul>
+          <li><a href="{{ site.external_urls.tutorials }}">Tutorials</a></li>
+          <li><a href="{{ site.baseurl }}/docs">Docs</a></li>
+          <li><a href="{{ site.external_urls.discuss }}" target="_blank">Discuss</a></li>
+          <li><a href="{{ site.external_urls.github_issues }}" target="_blank">GitHub Issues</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col follow-us-col">
+       
+
+        <div class="footer-social-icons">
+          <a href="{{ site.external_urls.github }}" target="_blank" class="github"></a>
+        </div>
+      </div>
+    </div>
+    <div class="privacy-policy">
+      <ul>
+        <li class="privacy-policy-links">Copyright © MVLab 2021</li>
+        <li class="privacy-policy-links">|</li>
+
+      </ul>
+    </div>
+  </div>
+  {% include google_pixel.html %}
+</footer>
+
+{% include mobile_menu.html %}
+
+{% include footer_scripts.html %}
+
+{% include cookie_banner.html %}
